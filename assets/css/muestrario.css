@@ -1,0 +1,54 @@
+section{
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    gap: 2% 10%
+}
+
+section img{
+    width: 550px;
+    min-height: 170px;
+    max-height: 300px;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+section div{
+    background: var(--rojo);
+    padding: 15px;
+    text-align: justify;
+}
+
+.nomproducto{
+    text-align: center;
+    color: var(--azul);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.precio{
+    color: var(--azul);
+    font-size: 120%;
+}
+
+table{
+    margin: 150px auto;
+    width: 700px;
+    background-color: var(--rojo);
+    box-shadow: 1px 1px 2px var(--transparente);
+    box-shadow: 2px 2px 5px var(--transparente);
+}
+
+td,th{
+    background-color: var(--rojo);
+    text-align: center;
+}
+
+th{
+    background-color: var(--azul);
+}
+
+tr:nth-child(2n+1) td{
+    background-color: var(--rojo-resalto);
+}

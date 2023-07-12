@@ -1,0 +1,46 @@
+@keyframes roll-in-left {
+    0% {
+      -webkit-transform: translateX(-800px) rotate(-540deg);
+              transform: translateX(-800px) rotate(-540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(1600px) rotate(0deg);
+              transform: translateX(1600px) rotate(0deg);
+      opacity: 1;
+    }
+  }
+#kaya{
+    animation: roll-in-left 3s infinite alternate;
+}  
+
+#pag{
+    width: 100%;
+    height: fit-content;
+    margin: 50px 0;
+    background-image: radial-gradient(var(--enlace), var(--azul), var(--invisible));
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+#pag div{
+    flex-basis: 100%;
+}
+
+#pag p{
+    overflow-y:scroll;
+    margin: 50px auto;
+    height: 100px;
+    width: 500px;
+    display: inline-block;
+}
+
+#pag img{
+    transform: scale(0.5);
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}

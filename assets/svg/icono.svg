@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <!-- Definiciones -->
+  <defs>
+    <style>
+      .water {
+        fill: #0080ff; /* Color del agua */
+      }
+      .paddle {
+        fill: #000000; /* Color de la pala */
+        stroke: #000000; /* Color de contorno de la línea del mango */
+        stroke-width: 2; /* Grosor de la línea del mango */
+        stroke-linecap: round; /* Extremos redondeados de la línea */
+      }
+    </style>
+  </defs>
+
+  <!-- Rectangulo que representa el agua con ondas -->
+  <path class="water" d="M0 14 Q6 12 12 14 T24 14 V24 H0 Z" />
+
+  <!-- Elipse que representa la hoja de la pala de piragüismo sumergida -->
+  <ellipse class="paddle" cx="12" cy="16.5" rx="4.5" ry="2" transform="rotate(-60 12 16.5)" />
+
+  <!-- Línea que representa el mango de la pala de piragüismo -->
+  <line class="paddle" x1="13.5" y1="14" x2="18" y2="8" />
+
+</svg>

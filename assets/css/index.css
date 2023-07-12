@@ -1,0 +1,115 @@
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: justify;
+    row-gap: 40px;
+}
+
+#mark{
+    margin-top: 100px;
+    justify-content: space-evenly;
+}
+
+section div p{
+    background-color: var(--invisible);
+    font-size: 20px;
+    margin: 0;
+    border-radius: 10px;
+    color: var(--invisible);
+}
+
+@keyframes tamaño {
+    from {width: 140%;}
+    to {width: 140%;}
+}
+
+.ind div{
+    background-size: cover;
+    transition: 0.4s ease-out;
+    background-repeat: no-repeat;
+    padding-bottom: unset;
+}
+
+#noti div:nth-child(1){
+    background-image: url(../../assets/img/ind2.jpeg);
+    background-position: 50%;
+    height: 500px;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+#noti div:nth-child(2){
+    background-image: url(../../assets/img/ind1.jpeg);
+    flex-basis: 20%;
+    height: 600px;
+}
+
+#noti div:nth-child(3){
+    background-image: url(../../assets/img/ind3.jpg);
+    height: 600px;
+    flex-basis: 70%;
+}
+
+#mark div:nth-child(1){
+    background-image: url(../../assets/img/publi1.png);
+    background-size: unset;
+    flex-basis: 45%;
+    height: 200px;
+}
+
+#mark div:nth-child(2){
+    background-image: url(../../assets/img/mark2.webp);
+    background-position: 50% 15%;
+    flex-basis: 33%;
+    height: 340px;
+}
+
+#noti div:nth-child(1) p{
+    font-size: 200%;
+}
+
+#hist div{
+    background-image: url(../../assets/img/hist.jpg);
+    background-position: 80%;
+    flex-basis:80%;
+
+    height: 400px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+section div:nth-child(1) p{
+    height: calc(100% - 80px);
+    padding: 40px;
+
+}
+
+section div:nth-child(2) p{
+    height: calc(100% - 80px);
+    padding: 0 20px;
+    padding-top: 80px;
+}
+
+section div:nth-child(3) p{
+    height: calc(100% - 400px);
+    height: 400px;
+    padding: 100px;
+}
+
+
+section div:hover {
+    transform: translate(0, -20px);
+    box-shadow: 1px 1px 1px var(--transparente);
+    box-shadow: 3px 3px 5px var(--transparente);
+    transition-delay: 0.20s;
+    transition: 0.5s ease-out;
+}
+
+section div p:hover{
+    background-color: var(--transparente);
+    color: var(--text);
+    transition-delay: 0.20s;
+    transition-duration: 0.5s;
+}
+

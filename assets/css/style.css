@@ -1,0 +1,241 @@
+:root {
+    --azul: rgb(58, 165, 148);
+    --rojo: rgb(165, 58, 75);
+    --fondo: url(../img/fffondo.jpg);
+    --text: rgb(119, 132, 130);
+    --enlace: rgb(20, 72, 83);
+    --rojo-resalto: rgb(83, 29, 38);
+    --transparente:rgba(0, 0, 0, 0.7);
+    --invisible:rgba(0, 0, 0,0); 
+}
+
+@keyframes mover {
+    from {left: -35%;}
+    to {left: 0;}
+}
+
+#prin{
+    position: relative;
+    animation: mover 3s;
+}
+
+address{
+    display: inline;    
+}
+
+hr{
+    border: 0px;
+    width: 0;
+}
+
+a{
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+a:any-link{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--azul);
+}
+
+
+html{
+    background-repeat: repeat;
+    background-image: var(--fondo);
+    margin: 0 10%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+fieldset , article, section div{
+    background: linear-gradient(var(--rojo), var(--rojo-resalto));
+    border: 0;
+    padding-bottom: 40px;
+    box-shadow: 1px 1px 2px var(--transparente);
+    box-shadow: 2px 2px 5px var(--transparente);
+    border-radius: 10px;
+}
+
+
+#pegajoso{
+    margin: auto -13.15%;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+
+header{
+    text-align: center;
+    margin: 0;
+    padding-left: 0;
+    background-color: var(--azul);
+    }
+
+#titulo{
+    color: var(--enlace);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#ses{
+    float: right;
+    display: flex;
+    flex-direction:column;
+    text-align: left;
+    background: var(--rojo);
+    box-shadow: -2px 2px 5px var(--transparente);
+    border-radius: 4px;
+}
+
+#ses a{
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 1px;
+    transition: background-color 0.5s;
+    border-radius: 4px;
+    padding-bottom: 3px;
+}
+
+#ses:hover{
+    box-shadow: -2px 2px 5px var(--enlace);
+}
+
+#ses a:hover{
+    background-color: var(--enlace);
+    transition: background-color 0.8s;
+
+}
+
+.regis{
+    width: 26.5px;
+    margin: auto;
+}
+
+#pires{
+    text-transform: uppercase;
+    font-size: 125%;
+}
+
+.inicio{
+    width: 4.5%;
+}
+
+
+nav{
+    width: 100%;
+    height:6em;
+    display: flex;
+}
+
+nav div {
+    width: 90%;
+    text-align: center;
+    height: 40%;
+    transition: 0.5s;
+}
+
+nav div:nth-child(1){
+    background-image: url(../img/nave1.PNG);
+    background-size: 90%;
+
+}
+
+nav div:nth-child(2){
+    background-image: url(../img/nave2.jpg);
+    background-size: 120%;
+    background-position: 50% 20%;
+
+}
+
+nav div:nth-child(3){
+    background-image: url(../img/nave3.jpg);
+    background-size: 100%;
+    background-position: 50% 35%;
+
+}
+
+nav div:nth-child(4){
+    background-image: url(../img/nave4.png);
+    background-size: 100%;
+    background-position: 50% 50%;
+
+}
+
+
+nav div a{
+    font-size: 120%;
+    font-weight: bold;
+    background-color: var(--transparente);
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+nav div a:hover{
+    background-color:unset;
+    color: var(--invisible);
+    transition: 0.4s;
+    transition-delay: 0.2s;
+
+}
+
+nav div:hover{
+    width: 120%;
+    height: 120%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: width 0.5s, height 0.5s;
+    transition-delay: 0.2s;
+    transition-timing-function:ease-in;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 2px 2px 2px var(--transparente);
+}
+
+
+
+footer{
+    background-color: var(--enlace);
+    padding: 2px;
+    /* box-shadow-: inset 0px 0px 5px var(--enlace);     */
+}
+
+#pie{
+    position: absolute;
+    right: 15%;
+    width: 150px;
+}
+
+.ov-btn-grow-skew-reverse {
+    background: var(--rojo);
+    color: var(--enlace);
+    padding: 7px 20px;
+    border-radius: 50px;
+    position: relative;
+    right: -42%;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .ov-btn-grow-skew-reverse::after {
+    content: "";
+    background: var(--enlace);
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(45deg) scale(0, 1);
+    transition: all 0.3s ease;
+  }
+  .ov-btn-grow-skew-reverse:hover::after {
+    transition: all 0.3s ease-out;
+    transform: skewX(45deg) scale(1, 1);
+  }

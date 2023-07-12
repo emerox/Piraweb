@@ -1,0 +1,58 @@
+form{
+    display: block;
+    width: 40%;
+    height: 80%;
+    margin: 10px auto;
+    padding: 50px;
+}
+
+
+
+legend{
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--azul);
+    color: var(--enlace);
+    margin-bottom: 35px;
+    box-shadow: 1px 1px 2px var(--transparente);
+    box-shadow: 2px 2px 5px var(--transparente);
+    border-radius: 100px;
+
+}
+
+label , p{
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: large;
+}
+
+input{
+    display: block;
+    width: 300px;
+    height: 25px;
+    margin: 30px auto;
+    border: 0;
+    border-radius: 100px;
+}
+
+input[type=radio] {
+    display: inline-block;
+    width: 20px;
+    height:20px;
+    margin-left: 20%;
+}
+
+/* input[type=radio]:{
+    color: var(--rojo);
+} */
+
+div label{
+    display: inline;
+    font-size:unset;
+    text-transform: unset;
+}
